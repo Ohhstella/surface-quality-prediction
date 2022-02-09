@@ -17,6 +17,7 @@ IoT based surface quality prediction, a project to collect and analyze vibration
 #### In the experiments, two CISS sensors are mounted respectively on the clamp and robot for measuring their acceleration signals of vibration in the orthogonal directions (X, Y and Z) simultaneously. In addition, these two sensors are linked with an edge device (Raspberry Pi) to transfer the vibrational signal.  
 #### 2) surface roughness tester
 ![J)WH(4QOLNEN0QX{$$CG P6](https://user-images.githubusercontent.com/73990275/153081452-e7b282a7-f799-4caa-a675-3041bea872f9.png)
+#### 3)
 # 3. Data Mining Process
 #### Data mining Process involves 4 main parts, namely data understanding, data preparation, modelling and evaluation.
 ### 1) Data understanding
