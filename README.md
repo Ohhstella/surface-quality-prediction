@@ -48,4 +48,4 @@
 ### The best predicticted result are visualized.
 ![5 AQYJ}{JZ69((P`_ 6C](https://user-images.githubusercontent.com/73990275/153081843-3d18a485-185d-4d8a-9a87-0707f6bfbf68.png)
 #### It can be found that no matter which features are selected as inputs, the lightGBM always has the best predictive performance.
-#### Thus, I choose LightGBM method to predict surface quality and achieve 91% predictive accuracy.  
+#### Thus, LightGBM model with all features is selected to predict surface quality and achieves 91% predictive accuracy.  
