@@ -33,13 +33,16 @@
 #### The main content of this section is to process the vibrational data. It involves mainly three parts: extracting the valid data during the milling process  from the raw data, extracting the vibrational features in the time domain and in the frequency domain.
 ![GZ6R_BBLFT}2Z $V)3 GQES](https://user-images.githubusercontent.com/73990275/153284103-58d29614-7785-4c4b-97b0-0f404c086160.png)
 ### 3) Modeling
+#### model_mlr_train.ipynb shows the prediction model with multiple linear regression method.
+#### model_train_mlp.ipynb shows the prediction model with multilayer perceptron methon.
+#### model_train_tree.ipynb shows the prediction model with LightGBM method.
 ![JN)V%O~Q5D0X40C(C NYX C](https://user-images.githubusercontent.com/73990275/153081708-e66d71a7-88f6-4eb2-adde-814196068511.png)
 ### 4) Evaluation
 ![Z6GZX H%W ( _6Y2S~T2_ T](https://user-images.githubusercontent.com/73990275/153081774-1deb0453-0d70-4576-a976-25a356a5563c.png)
-### 4. Results 
+# 4. Results 
 #### comparison of different prediction models with different combination of inputs
+#### Multiple linear regression model , LightGBM and MLP model  use Mean Square Error (MSE), Mean Absolute error(MAE), and Mean Absolute Percentage Error (MAPE) and accuracy as evaluation metrics. The predictive accuracy of those model based on different input parameters is compared as follows:
 ![4VF2Z9IETXP87(BUW{WG~(C](https://user-images.githubusercontent.com/73990275/153081899-05e9b62f-8add-42a0-8849-989d0fd791cd.png)
-### The best prediction accuracy 
-#### It can be found that no matter which features are selected as inputs, the lightGBM always has the best predictive performance.
+### The best predicticted result are visualized.
 ![5 AQYJ}{JZ69((P`_ 6C](https://user-images.githubusercontent.com/73990275/153081843-3d18a485-185d-4d8a-9a87-0707f6bfbf68.png)
-
+#### It can be found that no matter which features are selected as inputs, the lightGBM always has the best predictive performance.
