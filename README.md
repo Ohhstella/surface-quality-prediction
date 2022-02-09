@@ -1,5 +1,10 @@
 # Surface Roughness Prediction via Vibration Data with AI Method
-IoT based surface quality prediction, a project to collect and analyze vibration data in python and use the data to predict for surface quality prediction.
+#### IoT based surface quality prediction, a project to collect and analyze vibration data in python and use the data to predict for surface quality prediction.
+#### vibration data of 100 experiments are stored in folder "clamp" and folder"robot". 
+#### file feature extraction-Y (2).ipynb shows the process of extraction of vibration features in time domain and frequency domain.
+#### model_mlr_train.ipynb shows the prediction model with multiple linear regression method.
+#### model_train_mlp.ipynb shows the prediction model with multilayer perceptron methon.
+#### model_train_tree.ipynb shows the prediction model with LightGBM method.
 # 1. Abstract
 #### When inspecting the quality of machined parts, surface roughness is an essential quality indicator. But due to the limitations of the equipment and economic reasons, it is difficult to measure the surface roughness directly during the machining process by measurement equipment. To monitor the surface quality during the milling process, this project proposed a surface quality prediction model conducted by analyzing a large amount of data from sensors and applying artificial intelligence algorithms (multiple linear regression, tree-based model (LightGBM), artificial neural network. 
 #### In this project, experiments under various cutting parameters during the robot-assisted milling process are employed. The statistical data analysis of the result of these machining tests can explore the effect of cutting parameters on surface roughness. Following that, machining process optimization with better surface quality and less vibration can be obtained using prediction models developed using various approaches such as statistical regression and artificial intelligence-based models. The machine learning method and FFT (Fast Fourier Transform) method are applied to extract inconspicuous features from raw vibrational signals during the data processing phase. To optimize the predictive model, the surface roughness prediction models with the combination of different parameters (depth of cut, spindle speed, feed rate, the vibration of the clamp and robot) are built. The experimental equipment used in this research is the KUKA 6-axis milling robot in Incremental Manufacturing Lab, which has more flexibility and more degrees of freedom.
@@ -7,7 +12,7 @@ IoT based surface quality prediction, a project to collect and analyze vibration
 ### 1) Design of Experiment
 
 #### spindle speed n (rpm), feed rate fz (f/tooth), and the depth of cut doc (mm) have a more significant effect on machining vibration and machined surface roughness. 
-#### By varying the machining parameters, it is possible to obtain a range of vibration amplitudes and surface roughnesses in order to determine the ideal machining parameters for the robot.  Since the maximum spindle speed of the robot can only be 16000, the spindle (n) speed was set to 8000-16000 rpm, increased in increments of 2000, respectively. The feed rate fz (feed per tooth) was set at 0.025, 0.05,0.075, and 0.01 (mm/t) at first. Because the measured surface roughness Ra of the tests with 0.025 fz  always more than 15, which means very inferior surface quality. 
+#### By varying the machining parameters, it is possible to obtain a range of vibration amplitudes and surface roughnesses in order to determine the ideal machining parameters for the robot.  Since the maximum spindle speed of the robot can only be 16000, the spindle (n) speed was set to 8000-16000 rpm, increased in increments of 2000, respectively. #### The feed rate fz (feed per tooth) was set at 0.025, 0.05,0.075, and 0.01 (mm/t) at first. Because the measured surface roughness Ra of the tests with 0.025 fz  always more than 15, which means very inferior surface quality. 
 #### Finally the feed per tooth fz was set at 0.05, 0.065, 0.075, 0.01 (mm/t). In addition, the linear feed rate of robot vf (mm/min) can be calculated by spindle speed n and feed per tooth based on the formula:  v_f=〖n(spinlde speed)∙f〗_z (feed per tooth)∙z(nummer of tooth). 
 #### In this project, various combinations with these three cutting parameters were used for deploying the experiments. Therefore, the following parameter combination can be obtained, as follows:
 
@@ -17,7 +22,7 @@ IoT based surface quality prediction, a project to collect and analyze vibration
 #### In the experiments, two CISS sensors are mounted respectively on the clamp and robot for measuring their acceleration signals of vibration in the orthogonal directions (X, Y and Z) simultaneously. In addition, these two sensors are linked with an edge device (Raspberry Pi) to transfer the vibrational signal.  
 #### 2) surface roughness tester
 ![J)WH(4QOLNEN0QX{$$CG P6](https://user-images.githubusercontent.com/73990275/153081452-e7b282a7-f799-4caa-a675-3041bea872f9.png)
-#### 3)
+#### 3) vibration data of 100 experiments are stored in folder "clamp" and folder"robot". 
 # 3. Data Mining Process
 #### Data mining Process involves 4 main parts, namely data understanding, data preparation, modelling and evaluation.
 ### 1) Data understanding
