@@ -23,8 +23,10 @@
 #### 2) surface roughness tester
 ![J)WH(4QOLNEN0QX{$$CG P6](https://user-images.githubusercontent.com/73990275/153081452-e7b282a7-f799-4caa-a675-3041bea872f9.png)
 #### 3) vibration data of 100 experiments are stored in folder "clamp" and folder"robot". 
+
 # 3. Data Mining Process
 #### Data mining Process involves 4 main parts, namely data understanding, data preparation, modelling and evaluation.
+#### file feature extraction-Y (2).ipynb shows the process of data understanding and data preparation.
 ### 1) Data understanding
 #### In the section of data understanding the relationship between the surface roughness with different cutting parameters are analyzed. And the Outliers can be found and deleted.
 ![J{LCVJYYKV%M61Y PGDD4N2](https://user-images.githubusercontent.com/73990275/153081571-35b65567-5899-4aed-b542-9cf754cc5edd.png)
